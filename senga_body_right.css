@@ -1,0 +1,73 @@
+.senga-boa_left
+{
+    display: none; 
+
+}
+
+.senga-boa_right
+{
+    display: none; 
+
+}
+
+.senga-body_left
+{
+    display: none; 
+
+}
+
+.senga-body_right
+{
+    display: contents;
+
+}
+
+.senga-fuchi_left
+{
+    display: none; 
+}
+
+.senga-fuchi_right
+{
+    display: none;
+}
+
+.senga-enamel_left
+{
+    display: none; 
+}
+
+.senga-enamel_right
+{
+    display: none;
+}
+
+.senga-sotofuchi_lump
+{
+    display: none;
+}
+
+.senga-fuchi_lump
+{
+    display: none;
+}
+
+.senga-lump
+{
+    display: none;
+}
+
+.senga-emblem_base
+{
+    display: none;
+}
+
+.senga-emblem_fuchi
+{
+    display: none;
+}
+
+.senga-emblem_es_s
+{
+    display: none;
+}

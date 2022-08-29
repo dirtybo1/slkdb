@@ -1,0 +1,1001 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap");
+html {
+  font-family: "Saira Condensed", sans-serif;
+  position: fixed;
+}
+
+header {
+  background-color: #000066;
+  padding: 10px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 0 0 7px #e7e, 0 0 10px #fff, 0 0 21px #e7e, 0 0 42px #006, 0 0 82px #006, 0 0 92px #006, 0 0 102px #006, 0 0 151px #006;
+}
+
+header h2 ul li {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+p {
+  display: inline;
+}
+
+.iconmouth {
+  display: block;
+  height: 20em;
+  margin: 0 auto;
+}
+
+.hyouji {
+  display: inline-block;
+  width: 150px;
+  height: 7.5em;
+  text-align: left;
+}
+
+.slider {
+  display: block;
+  float: right;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.toggle {
+  display: inline;
+  vertical-align: text-bottom;
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  line-height: 20px; /* 1行の高さ          */
+  letter-spacing: 0; /* 文字間             */
+  text-align: center; /* 文字位置は中央     */
+  font-size: 10px; /* 文字サイズ         */
+  width: 40px; /* ボタンの横幅       */
+  background: none; /* デフォルト背景色   */
+}
+
+.toggle input[type=checkbox] {
+  display: none; /* チェックボックス非表示 */
+}
+
+/* === チェックボックスのラベル（標準） ==================== */
+.toggle label {
+  display: block; /* ボックス要素に変更 */
+  box-sizing: border-box; /* 枠線を含んだサイズ */
+  text-align: center; /* 文字位置は中央     */
+  border: 1px solid #eee; /* 枠線(一旦四方向)   */
+  border-radius: 1px; /* 角丸               */
+  height: 20px; /* ボタンの高さ       */
+  font-size: 10px; /* 文字サイズ         */
+  line-height: 20px; /* 太字               */
+  font-weight: bold; /* 太字               */
+  background: #fff; /* 背景色             */
+  transition: 0.3s; /* ゆっくり変化       */
+}
+
+/* === ON側のチェックボックスのラベル（ONのとき） ========== */
+.toggle label span:after {
+  content: ""; /* 表示する文字       */
+  color: #ffffff;
+}
+
+.toggle #sample3check:checked + label {
+  background: #eee; /* 背景色             */
+}
+
+.toggle #sample3check:checked + label span:after {
+  content: ""; /* 表示する文字       */
+  color: #fff; /* 文字色             */
+}
+
+.toggle2 {
+  display: inline;
+  vertical-align: text-bottom;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  line-height: 20px; /* 1行の高さ          */
+  letter-spacing: 0; /* 文字間             */
+  text-align: center; /* 文字位置は中央     */
+  font-size: 10px; /* 文字サイズ         */
+  width: 40px; /* ボタンの横幅       */
+  background: none; /* デフォルト背景色   */
+}
+
+.toggle2 input[type=checkbox] {
+  display: none; /* チェックボックス非表示 */
+}
+
+/* === チェックボックスのラベル（標準） ==================== */
+.toggle2 label {
+  display: block; /* ボックス要素に変更 */
+  box-sizing: border-box; /* 枠線を含んだサイズ */
+  text-align: center; /* 文字位置は中央     */
+  border: 1px solid #eee; /* 枠線(一旦四方向)   */
+  border-radius: 1px; /* 角丸               */
+  height: 20px; /* ボタンの高さ       */
+  font-size: 10px; /* 文字サイズ         */
+  line-height: 20px; /* 太字               */
+  font-weight: bold; /* 太字               */
+  background: #fff; /* 背景色             */
+  transition: 0.3s; /* ゆっくり変化       */
+}
+
+/* === ON側のチェックボックスのラベル（ONのとき） ========== */
+.toggle2 label span:after {
+  content: ""; /* 表示する文字       */
+  color: #eee;
+}
+
+.toggle2 #rainbow_check:checked + label {
+  background: #eee; /* 背景色             */
+}
+
+.toggle2 #rainbow_check:checked + label span:after {
+  content: ""; /* 表示する文字       */
+  color: #eee; /* 文字色             */
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 200px;
+  outline: none;
+  background: #cfcfcf;
+  height: 14px;
+  border-radius: 1px;
+  border: solid 1px #ffffff;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f3f2f2;
+  width: 30px;
+  height: 16px;
+  border-radius: 0%;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+input[type=radio] {
+  margin-left: 10px;
+}
+
+.hyouji {
+  opacity: 0.6;
+}
+
+.emblem_radio {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+
+.colorPicker {
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 100px;
+}
+
+.spangel-animation {
+  display: block;
+  height: 20em;
+  margin: 0 auto;
+  border: solid 1px;
+}
+
+.spangel {
+  fill: white;
+}
+
+.table-scroll {
+  overflow: scroll;
+}
+
+table {
+  width: 1000px;
+  white-space: nowrap;
+}
+
+.colorselectbox {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.gradient_left {
+  fill: url(#exampleGradient);
+  opacity: 0.2;
+}
+
+.gradient_right {
+  fill: url(#exampleGradient);
+  opacity: 0.2;
+}
+
+.spangel-animation1 {
+  -webkit-animation-name: kf-animate-spangel1;
+          animation-name: kf-animate-spangel1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: none;
+          animation-direction: none;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.spangel-animation2 {
+  -webkit-animation-name: kf-animate-spangel2;
+          animation-name: kf-animate-spangel2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: none;
+          animation-direction: none;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation3 {
+  -webkit-animation-name: kf-animate-spangel3;
+          animation-name: kf-animate-spangel3;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: none;
+          animation-direction: none;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation4 {
+  -webkit-animation-name: kf-animate-spangel4;
+          animation-name: kf-animate-spangel4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: none;
+          animation-direction: none;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation5 {
+  -webkit-animation-name: kf-animate-spangel5;
+          animation-name: kf-animate-spangel5;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation6 {
+  -webkit-animation-name: kf-animate-spangel6;
+          animation-name: kf-animate-spangel6;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation7 {
+  -webkit-animation-name: kf-animate-spangel7;
+          animation-name: kf-animate-spangel7;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation8 {
+  -webkit-animation-name: kf-animate-spangel8;
+          animation-name: kf-animate-spangel8;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation9 {
+  -webkit-animation-name: kf-animate-spangel9;
+          animation-name: kf-animate-spangel9;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.spangel-animation10 {
+  -webkit-animation-name: kf-animate-spangel10;
+          animation-name: kf-animate-spangel10;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes kf-animate-spangel1 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kf-animate-spangel1 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel2 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel2 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel4 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel4 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel5 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel5 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel6 {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel6 {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel7 {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel7 {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel8 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel8 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel9 {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel9 {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes kf-animate-spangel10 {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.9;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0;
+  }
+}
+@keyframes kf-animate-spangel10 {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.9;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  10% {
+    opacity: 0;
+  }
+}
+.rainbow-animation1 {
+  -webkit-animation-name: kf-animate-rainbow1;
+          animation-name: kf-animate-rainbow1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes kf-animate-rainbow1 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kf-animate-rainbow1 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.rainbow-animation3 {
+  -webkit-animation-name: kf-animate-rainbow3;
+          animation-name: kf-animate-rainbow3;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes kf-animate-rainbow3 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kf-animate-rainbow3 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.rainbow-animation4 {
+  -webkit-animation-name: kf-animate-rainbow4;
+          animation-name: kf-animate-rainbow4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes kf-animate-rainbow4 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kf-animate-rainbow4 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
